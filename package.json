@@ -1,0 +1,42 @@
+{
+  "name": "hireling-postgres",
+  "version": "1.0.0",
+  "description": "PostgreSQL database connector for Hireling.",
+  "author": "Alex Soncodi",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./build",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc",
+    "package": "npm run clean && npm run build && ./package.sh"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/node": "~8.5.1",
+    "typescript": "~2.6.2"
+  },
+  "peerDependencies": {
+    "hireling": "^1"
+  },
+  "keywords": [
+    "postgres",
+    "postgresql",
+    "sql",
+    "database",
+    "store",
+    "driver",
+    "adapter",
+    "connector",
+    "hireling"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hireling/hireling-postgres.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hireling/hireling-postgres/issues"
+  },
+  "homepage": "https://github.com/Hireling/hireling-postgres#readme"
+}
